@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230D170127BE868700F5E1AF /* SharkOneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D170027BE868700F5E1AF /* SharkOneConfig.swift */; };
+		230D170227BE868700F5E1AF /* SharkOneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D170027BE868700F5E1AF /* SharkOneConfig.swift */; };
+		230D2DA727C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
+		230D2DA827C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
+		230D2DAA27C0EAB200F5E1AF /* GithubMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA927C0EAB200F5E1AF /* GithubMapping.json */; };
+		230D2DAB27C0EAB200F5E1AF /* GithubMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA927C0EAB200F5E1AF /* GithubMapping.json */; };
+		230D2DAE27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */; };
+		230D2DAF27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */; };
+		230D2DB127C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */; };
+		230D2DB227C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */; };
+		230D2DB527C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */; };
+		230D2DB627C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */; };
+		230D2DB927C1341A00F5E1AF /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */; };
+		230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */; };
+		230D2DBC27C138D000F5E1AF /* ViewComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DBB27C138D000F5E1AF /* ViewComponet.swift */; };
+		230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DBB27C138D000F5E1AF /* ViewComponet.swift */; };
+		230D2DC427C1B9E200F5E1AF /* SharkWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */; };
+		230D2DC527C1B9E200F5E1AF /* SharkWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */; };
+		230D2DC727C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
+		230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
+		23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
+		23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
+		23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
+		23CB42E527B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
+		23CB42F327B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */; };
+		23CB42F427B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */; };
+		23CB42F727B3EB79000A5C79 /* SlideBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */; };
+		23CB42F827B3EB79000A5C79 /* SlideBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */; };
+		23CB42FB27B3F016000A5C79 /* SharkLangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FA27B3F016000A5C79 /* SharkLangView.swift */; };
+		23CB42FC27B3F016000A5C79 /* SharkLangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FA27B3F016000A5C79 /* SharkLangView.swift */; };
+		23CB42FE27B3F2DB000A5C79 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */; };
+		23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */; };
+		23CB430127B3F539000A5C79 /* SharkFoundationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430027B3F539000A5C79 /* SharkFoundationView.swift */; };
+		23CB430227B3F539000A5C79 /* SharkFoundationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430027B3F539000A5C79 /* SharkFoundationView.swift */; };
+		23CB430427B3F552000A5C79 /* SharkSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430327B3F552000A5C79 /* SharkSubjectView.swift */; };
+		23CB430527B3F552000A5C79 /* SharkSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430327B3F552000A5C79 /* SharkSubjectView.swift */; };
+		23CB430827B549E4000A5C79 /* update.md in Resources */ = {isa = PBXBuildFile; fileRef = 23CB430727B549E4000A5C79 /* update.md */; };
+		23CB430927B549E4000A5C79 /* update.md in Resources */ = {isa = PBXBuildFile; fileRef = 23CB430727B549E4000A5C79 /* update.md */; };
+		23CB430C27B54ACC000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430B27B54ACC000A5C79 /* MarkdownUI */; };
+		23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430E27B54E51000A5C79 /* MarkdownUI */; };
+		23CB431227B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
+		23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		230D170027BE868700F5E1AF /* SharkOneConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneConfig.swift; sourceTree = "<group>"; };
+		230D2DA627C0E7CE00F5E1AF /* GuideLang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GuideLang.json; sourceTree = "<group>"; };
+		230D2DA927C0EAB200F5E1AF /* GithubMapping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GithubMapping.json; sourceTree = "<group>"; };
+		230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneAPIRequest.swift; sourceTree = "<group>"; };
+		230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneIssuesVM.swift; sourceTree = "<group>"; };
+		230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIModel.swift; sourceTree = "<group>"; };
+		230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailView.swift; sourceTree = "<group>"; };
+		230D2DBB27C138D000F5E1AF /* ViewComponet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponet.swift; sourceTree = "<group>"; };
+		230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkWebView.swift; sourceTree = "<group>"; };
+		230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkLocalIssuesVM.swift; sourceTree = "<group>"; };
+		23CB42D027B3E994000A5C79 /* SharkOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneApp.swift; sourceTree = "<group>"; };
+		23CB42D227B3E995000A5C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23CB42D727B3E995000A5C79 /* SharkOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CB42DD27B3E995000A5C79 /* SharkOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CB42DF27B3E995000A5C79 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSlidebar.swift; sourceTree = "<group>"; };
+		23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideBarLabel.swift; sourceTree = "<group>"; };
+		23CB42FA27B3F016000A5C79 /* SharkLangView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkLangView.swift; sourceTree = "<group>"; };
+		23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		23CB430027B3F539000A5C79 /* SharkFoundationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkFoundationView.swift; sourceTree = "<group>"; };
+		23CB430327B3F552000A5C79 /* SharkSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkSubjectView.swift; sourceTree = "<group>"; };
+		23CB430727B549E4000A5C79 /* update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = update.md; sourceTree = "<group>"; };
+		23CB431127B54F51000A5C79 /* FoundationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTool.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23CB42D427B3E995000A5C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CB430C27B54ACC000A5C79 /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CB42DA27B3E995000A5C79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230D16FF27BE863A00F5E1AF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				230D170027BE868700F5E1AF /* SharkOneConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		230D2DA527C0D2F000F5E1AF /* Guide-Json */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DA927C0EAB200F5E1AF /* GithubMapping.json */,
+				230D2DA627C0E7CE00F5E1AF /* GuideLang.json */,
+			);
+			path = "Guide-Json";
+			sourceTree = "<group>";
+		};
+		230D2DAC27C0FFDB00F5E1AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */,
+				230D2DB327C129BE00F5E1AF /* GithubAPIModel */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		230D2DB327C129BE00F5E1AF /* GithubAPIModel */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */,
+			);
+			path = GithubAPIModel;
+			sourceTree = "<group>";
+		};
+		230D2DB727C133E900F5E1AF /* ThirdDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */,
+			);
+			path = ThirdDetailView;
+			sourceTree = "<group>";
+		};
+		230D2DBF27C143B600F5E1AF /* FirstSlidebarView */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */,
+			);
+			path = FirstSlidebarView;
+			sourceTree = "<group>";
+		};
+		230D2DC027C143E100F5E1AF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				23CB431127B54F51000A5C79 /* FoundationTool.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		230D2DC127C1440700F5E1AF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */,
+				230D2DBB27C138D000F5E1AF /* ViewComponet.swift */,
+				230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		230D2DC227C1444100F5E1AF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */,
+				230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		23CB42CA27B3E994000A5C79 = {
+			isa = PBXGroup;
+			children = (
+				23CB42CF27B3E994000A5C79 /* Shared */,
+				23CB42DE27B3E995000A5C79 /* macOS */,
+				23CB42D827B3E995000A5C79 /* Products */,
+				23CB430D27B54E51000A5C79 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23CB42CF27B3E994000A5C79 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42D027B3E994000A5C79 /* SharkOneApp.swift */,
+				23CB42F127B3EAA0000A5C79 /* Views */,
+				230D2DC227C1444100F5E1AF /* ViewModels */,
+				230D16FF27BE863A00F5E1AF /* Config */,
+				230D2DC127C1440700F5E1AF /* UIKit */,
+				230D2DC027C143E100F5E1AF /* Foundation */,
+				230D2DAC27C0FFDB00F5E1AF /* Network */,
+				23CB430627B54882000A5C79 /* Resource */,
+				23CB42D227B3E995000A5C79 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		23CB42D827B3E995000A5C79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42D727B3E995000A5C79 /* SharkOne.app */,
+				23CB42DD27B3E995000A5C79 /* SharkOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23CB42DE27B3E995000A5C79 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42DF27B3E995000A5C79 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		23CB42F127B3EAA0000A5C79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */,
+				230D2DBF27C143B600F5E1AF /* FirstSlidebarView */,
+				23CB42F927B3EFDF000A5C79 /* SecondSlideView */,
+				230D2DB727C133E900F5E1AF /* ThirdDetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23CB42F927B3EFDF000A5C79 /* SecondSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42FA27B3F016000A5C79 /* SharkLangView.swift */,
+				23CB430027B3F539000A5C79 /* SharkFoundationView.swift */,
+				23CB430327B3F552000A5C79 /* SharkSubjectView.swift */,
+			);
+			path = SecondSlideView;
+			sourceTree = "<group>";
+		};
+		23CB430627B54882000A5C79 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				230D2DA527C0D2F000F5E1AF /* Guide-Json */,
+				23CB430727B549E4000A5C79 /* update.md */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		23CB430D27B54E51000A5C79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23CB42D627B3E995000A5C79 /* SharkOne (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CB42E827B3E995000A5C79 /* Build configuration list for PBXNativeTarget "SharkOne (iOS)" */;
+			buildPhases = (
+				23CB42D327B3E995000A5C79 /* Sources */,
+				23CB42D427B3E995000A5C79 /* Frameworks */,
+				23CB42D527B3E995000A5C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SharkOne (iOS)";
+			packageProductDependencies = (
+				23CB430B27B54ACC000A5C79 /* MarkdownUI */,
+			);
+			productName = "SharkOne (iOS)";
+			productReference = 23CB42D727B3E995000A5C79 /* SharkOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23CB42DC27B3E995000A5C79 /* SharkOne (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CB42EB27B3E995000A5C79 /* Build configuration list for PBXNativeTarget "SharkOne (macOS)" */;
+			buildPhases = (
+				23CB42D927B3E995000A5C79 /* Sources */,
+				23CB42DA27B3E995000A5C79 /* Frameworks */,
+				23CB42DB27B3E995000A5C79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SharkOne (macOS)";
+			packageProductDependencies = (
+				23CB430E27B54E51000A5C79 /* MarkdownUI */,
+			);
+			productName = "SharkOne (macOS)";
+			productReference = 23CB42DD27B3E995000A5C79 /* SharkOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23CB42CB27B3E994000A5C79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					23CB42D627B3E995000A5C79 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					23CB42DC27B3E995000A5C79 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 23CB42CE27B3E994000A5C79 /* Build configuration list for PBXProject "SharkOne" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23CB42CA27B3E994000A5C79;
+			packageReferences = (
+				23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
+			productRefGroup = 23CB42D827B3E995000A5C79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23CB42D627B3E995000A5C79 /* SharkOne (iOS) */,
+				23CB42DC27B3E995000A5C79 /* SharkOne (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23CB42D527B3E995000A5C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D2DAA27C0EAB200F5E1AF /* GithubMapping.json in Resources */,
+				230D2DA727C0E7CE00F5E1AF /* GuideLang.json in Resources */,
+				23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */,
+				23CB430827B549E4000A5C79 /* update.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CB42DB27B3E995000A5C79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D2DAB27C0EAB200F5E1AF /* GithubMapping.json in Resources */,
+				230D2DA827C0E7CE00F5E1AF /* GuideLang.json in Resources */,
+				23CB42E527B3E995000A5C79 /* Assets.xcassets in Resources */,
+				23CB430927B549E4000A5C79 /* update.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23CB42D327B3E995000A5C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D170127BE868700F5E1AF /* SharkOneConfig.swift in Sources */,
+				230D2DB527C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */,
+				23CB42FB27B3F016000A5C79 /* SharkLangView.swift in Sources */,
+				23CB42F727B3EB79000A5C79 /* SlideBarLabel.swift in Sources */,
+				230D2DB127C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */,
+				230D2DBC27C138D000F5E1AF /* ViewComponet.swift in Sources */,
+				230D2DC727C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */,
+				23CB430427B3F552000A5C79 /* SharkSubjectView.swift in Sources */,
+				23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */,
+				23CB431227B54F51000A5C79 /* FoundationTool.swift in Sources */,
+				23CB430127B3F539000A5C79 /* SharkFoundationView.swift in Sources */,
+				23CB42F327B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */,
+				230D2DC427C1B9E200F5E1AF /* SharkWebView.swift in Sources */,
+				230D2DB927C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
+				23CB42FE27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
+				230D2DAE27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CB42D927B3E995000A5C79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D170227BE868700F5E1AF /* SharkOneConfig.swift in Sources */,
+				230D2DB627C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */,
+				23CB42FC27B3F016000A5C79 /* SharkLangView.swift in Sources */,
+				23CB42F827B3EB79000A5C79 /* SlideBarLabel.swift in Sources */,
+				230D2DB227C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */,
+				230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */,
+				230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */,
+				23CB430527B3F552000A5C79 /* SharkSubjectView.swift in Sources */,
+				23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */,
+				23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */,
+				23CB430227B3F539000A5C79 /* SharkFoundationView.swift in Sources */,
+				23CB42F427B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */,
+				230D2DC527C1B9E200F5E1AF /* SharkWebView.swift in Sources */,
+				230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
+				23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
+				230D2DAF27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		23CB42E627B3E995000A5C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23CB42E727B3E995000A5C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		23CB42E927B3E995000A5C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_NAME = SharkOne;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23CB42EA27B3E995000A5C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_NAME = SharkOne;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23CB42EC27B3E995000A5C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_NAME = SharkOne;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23CB42ED27B3E995000A5C79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_NAME = SharkOne;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23CB42CE27B3E994000A5C79 /* Build configuration list for PBXProject "SharkOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CB42E627B3E995000A5C79 /* Debug */,
+				23CB42E727B3E995000A5C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CB42E827B3E995000A5C79 /* Build configuration list for PBXNativeTarget "SharkOne (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CB42E927B3E995000A5C79 /* Debug */,
+				23CB42EA27B3E995000A5C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23CB42EB27B3E995000A5C79 /* Build configuration list for PBXNativeTarget "SharkOne (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23CB42EC27B3E995000A5C79 /* Debug */,
+				23CB42ED27B3E995000A5C79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23CB430B27B54ACC000A5C79 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+		23CB430E27B54E51000A5C79 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 23CB42CB27B3E994000A5C79 /* Project object */;
+}
