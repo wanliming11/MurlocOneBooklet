@@ -12,9 +12,7 @@ import SwiftUI
 struct IssueDetailView: View {
     var title: String
     var number: Int
-    
-    
-    
+
     var body: some View {
         VStack {
             Spacer()

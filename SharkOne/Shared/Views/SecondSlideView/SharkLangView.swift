@@ -20,7 +20,7 @@ struct IssuesView: View {
     var body: some View {
         List {
             ForEach(vm.issues) { ci in
-                    Section {
+                Section(ci.name) {
                         ForEach(ci.issues) { i in
                             NavigationLink {
                                 IssueDetailView(title: i.title, number: i.number)
