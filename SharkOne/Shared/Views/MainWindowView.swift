@@ -10,7 +10,10 @@ import MarkdownUI
 
 struct MainWindowView: View {
     var body: some View {
-        NavigationView {
+        /// 这里是让一些学习的思考点有执行的机会
+        MMOAlgoBoundaryAndSlice.thinking()
+
+        return NavigationView {
             ShareSlidebar()
             Text("分类")
             Text("详情")

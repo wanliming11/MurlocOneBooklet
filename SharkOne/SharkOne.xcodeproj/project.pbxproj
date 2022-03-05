@@ -49,6 +49,8 @@
 		23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430E27B54E51000A5C79 /* MarkdownUI */; };
 		23CB431227B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
 		23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
+		E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */; };
+		E8298F8C0B856287225BEA5F /* AlgoBoundaryAndSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,7 @@
 		23CB430327B3F552000A5C79 /* SharkSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkSubjectView.swift; sourceTree = "<group>"; };
 		23CB430727B549E4000A5C79 /* update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = update.md; sourceTree = "<group>"; };
 		23CB431127B54F51000A5C79 /* FoundationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTool.swift; sourceTree = "<group>"; };
+		E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgoBoundaryAndSlice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,9 +258,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E82980F54337B77036DC5E37 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
 		E8298B7D196C508BFA104D74 /* Thinking */ = {
 			isa = PBXGroup;
 			children = (
+				E82980F54337B77036DC5E37 /* Algo */,
 			);
 			path = Thinking;
 			sourceTree = "<group>";
@@ -391,6 +403,7 @@
 				230D2DB927C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
 				23CB42FE27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
 				230D2DAE27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+				E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +427,7 @@
 				230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
 				23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
 				230D2DAF27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+				E8298F8C0B856287225BEA5F /* AlgoBoundaryAndSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
