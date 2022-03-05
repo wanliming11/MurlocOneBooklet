@@ -8,7 +8,7 @@
 import Foundation
 
 final class ShareOneConfig {
-    static let gitHubAccessToken = "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"
+    static let gitHubAccessToken = "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" // 从 GitHub 获取
     static let githubMappingContent = "GithubMapping"  //json 格式
     static let githubBaseUrl = "https://github.com/"
     static let issueRepo = "wanliming11/SwiftBook/issues/"

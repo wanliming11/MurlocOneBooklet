@@ -181,6 +181,7 @@
 				23CB42DE27B3E995000A5C79 /* macOS */,
 				23CB42D827B3E995000A5C79 /* Products */,
 				23CB430D27B54E51000A5C79 /* Frameworks */,
+				E8298B7D196C508BFA104D74 /* Thinking */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +253,13 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8298B7D196C508BFA104D74 /* Thinking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Thinking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
