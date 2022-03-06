@@ -11,7 +11,11 @@ import SwiftUI
 struct SharkOneApp: App {
     var body: some Scene {
         WindowGroup {
+            #if os(iOS)
+            SharkiOSMainView()
+            #else
             MainWindowView()
+            #endif
         }
     }
 }

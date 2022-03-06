@@ -7,48 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230D170127BE868700F5E1AF /* SharkOneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D170027BE868700F5E1AF /* SharkOneConfig.swift */; };
 		230D170227BE868700F5E1AF /* SharkOneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D170027BE868700F5E1AF /* SharkOneConfig.swift */; };
 		230D2DA727C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
 		230D2DA827C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
 		230D2DAA27C0EAB200F5E1AF /* GithubMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA927C0EAB200F5E1AF /* GithubMapping.json */; };
 		230D2DAB27C0EAB200F5E1AF /* GithubMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA927C0EAB200F5E1AF /* GithubMapping.json */; };
-		230D2DAE27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */; };
 		230D2DAF27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DAD27C1002F00F5E1AF /* SharkOneAPIRequest.swift */; };
-		230D2DB127C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */; };
 		230D2DB227C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB027C125FB00F5E1AF /* SharkOneIssuesVM.swift */; };
-		230D2DB527C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */; };
 		230D2DB627C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB427C129DE00F5E1AF /* GitHubAPIModel.swift */; };
-		230D2DB927C1341A00F5E1AF /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */; };
 		230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DB827C1341A00F5E1AF /* IssueDetailView.swift */; };
-		230D2DBC27C138D000F5E1AF /* ViewComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DBB27C138D000F5E1AF /* ViewComponet.swift */; };
 		230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DBB27C138D000F5E1AF /* ViewComponet.swift */; };
-		230D2DC427C1B9E200F5E1AF /* SharkWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */; };
 		230D2DC527C1B9E200F5E1AF /* SharkWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */; };
-		230D2DC727C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
 		230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
+		2390F9D927D4613500319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9D827D4613500319074 /* AVKit.framework */; platformFilter = maccatalyst; };
+		2390F9DB27D4613F00319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9DA27D4613F00319074 /* AVKit.framework */; };
+		2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9DE27D466D500319074 /* SharkiOSMainView.swift */; };
+		2390F9E127D467B200319074 /* mimi1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9E027D467B200319074 /* mimi1.mp4 */; };
+		2390F9E327D4685600319074 /* CardContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9E227D4685600319074 /* CardContainerView.swift */; };
+		2390F9E727D46D4000319074 /* CardContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9E627D46D4000319074 /* CardContainerViewModel.swift */; };
+		2390F9EA27D47ED900319074 /* mimi2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9E927D47ED900319074 /* mimi2.mp4 */; };
+		2390F9EC27D47EE400319074 /* mimi3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9EB27D47EE400319074 /* mimi3.mp4 */; };
 		23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
 		23CB42E527B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
-		23CB42F327B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */; };
 		23CB42F427B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F227B3EAE7000A5C79 /* ShareSlidebar.swift */; };
-		23CB42F727B3EB79000A5C79 /* SlideBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */; };
 		23CB42F827B3EB79000A5C79 /* SlideBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42F627B3EB79000A5C79 /* SlideBarLabel.swift */; };
-		23CB42FB27B3F016000A5C79 /* SharkLangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FA27B3F016000A5C79 /* SharkLangView.swift */; };
 		23CB42FC27B3F016000A5C79 /* SharkLangView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FA27B3F016000A5C79 /* SharkLangView.swift */; };
-		23CB42FE27B3F2DB000A5C79 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */; };
 		23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42FD27B3F2DB000A5C79 /* MainWindowView.swift */; };
-		23CB430127B3F539000A5C79 /* SharkFoundationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430027B3F539000A5C79 /* SharkFoundationView.swift */; };
 		23CB430227B3F539000A5C79 /* SharkFoundationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430027B3F539000A5C79 /* SharkFoundationView.swift */; };
-		23CB430427B3F552000A5C79 /* SharkSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430327B3F552000A5C79 /* SharkSubjectView.swift */; };
 		23CB430527B3F552000A5C79 /* SharkSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB430327B3F552000A5C79 /* SharkSubjectView.swift */; };
 		23CB430827B549E4000A5C79 /* update.md in Resources */ = {isa = PBXBuildFile; fileRef = 23CB430727B549E4000A5C79 /* update.md */; };
 		23CB430927B549E4000A5C79 /* update.md in Resources */ = {isa = PBXBuildFile; fileRef = 23CB430727B549E4000A5C79 /* update.md */; };
 		23CB430C27B54ACC000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430B27B54ACC000A5C79 /* MarkdownUI */; };
 		23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430E27B54E51000A5C79 /* MarkdownUI */; };
-		23CB431227B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
 		23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
+		E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298A2A514E7BAE0D6D66BC /* MediaInfos.swift */; };
+		E8298683A6F46C486F445C98 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298ADFDC924E4CC48B03FD /* VideoPlayerView.swift */; };
 		E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */; };
 		E8298F8C0B856287225BEA5F /* AlgoBoundaryAndSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +59,14 @@
 		230D2DBB27C138D000F5E1AF /* ViewComponet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponet.swift; sourceTree = "<group>"; };
 		230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkWebView.swift; sourceTree = "<group>"; };
 		230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkLocalIssuesVM.swift; sourceTree = "<group>"; };
+		2390F9D827D4613500319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		2390F9DA27D4613F00319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
+		2390F9DE27D466D500319074 /* SharkiOSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkiOSMainView.swift; sourceTree = "<group>"; };
+		2390F9E027D467B200319074 /* mimi1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi1.mp4; sourceTree = "<group>"; };
+		2390F9E227D4685600319074 /* CardContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerView.swift; sourceTree = "<group>"; };
+		2390F9E627D46D4000319074 /* CardContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerViewModel.swift; sourceTree = "<group>"; };
+		2390F9E927D47ED900319074 /* mimi2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi2.mp4; sourceTree = "<group>"; };
+		2390F9EB27D47EE400319074 /* mimi3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi3.mp4; sourceTree = "<group>"; };
 		23CB42D027B3E994000A5C79 /* SharkOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneApp.swift; sourceTree = "<group>"; };
 		23CB42D227B3E995000A5C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CB42D727B3E995000A5C79 /* SharkOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +81,8 @@
 		23CB430727B549E4000A5C79 /* update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = update.md; sourceTree = "<group>"; };
 		23CB431127B54F51000A5C79 /* FoundationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTool.swift; sourceTree = "<group>"; };
 		E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgoBoundaryAndSlice.swift; sourceTree = "<group>"; };
+		E8298A2A514E7BAE0D6D66BC /* MediaInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaInfos.swift; sourceTree = "<group>"; };
+		E8298ADFDC924E4CC48B03FD /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2390F9DB27D4613F00319074 /* AVKit.framework in Frameworks */,
 				23CB430C27B54ACC000A5C79 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2390F9D927D4613500319074 /* AVKit.framework in Frameworks */,
 				23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,9 +184,45 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		2390F9DC27D4668C00319074 /* MacApp */ = {
+			isa = PBXGroup;
+			children = (
+				23CB42F127B3EAA0000A5C79 /* Views */,
+				230D2DC227C1444100F5E1AF /* ViewModels */,
+				230D16FF27BE863A00F5E1AF /* Config */,
+				230D2DC127C1440700F5E1AF /* UIKit */,
+				230D2DC027C143E100F5E1AF /* Foundation */,
+				230D2DAC27C0FFDB00F5E1AF /* Network */,
+				23CB430627B54882000A5C79 /* Resource */,
+			);
+			path = MacApp;
+			sourceTree = "<group>";
+		};
+		2390F9DD27D466B000319074 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				2390F9DE27D466D500319074 /* SharkiOSMainView.swift */,
+			);
+			path = iOSApp;
+			sourceTree = "<group>";
+		};
+		2390F9E827D47EB700319074 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2390F9EB27D47EE400319074 /* mimi3.mp4 */,
+				2390F9E927D47ED900319074 /* mimi2.mp4 */,
+				2390F9E027D467B200319074 /* mimi1.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		23CB42CA27B3E994000A5C79 = {
 			isa = PBXGroup;
 			children = (
+				2390F9E827D47EB700319074 /* Resources */,
+				23CB42D227B3E995000A5C79 /* Assets.xcassets */,
+				2390F9DD27D466B000319074 /* iOSApp */,
+				2390F9DC27D4668C00319074 /* MacApp */,
 				23CB42CF27B3E994000A5C79 /* Shared */,
 				23CB42DE27B3E995000A5C79 /* macOS */,
 				23CB42D827B3E995000A5C79 /* Products */,
@@ -192,14 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				23CB42D027B3E994000A5C79 /* SharkOneApp.swift */,
-				23CB42F127B3EAA0000A5C79 /* Views */,
-				230D2DC227C1444100F5E1AF /* ViewModels */,
-				230D16FF27BE863A00F5E1AF /* Config */,
-				230D2DC127C1440700F5E1AF /* UIKit */,
-				230D2DC027C143E100F5E1AF /* Foundation */,
-				230D2DAC27C0FFDB00F5E1AF /* Network */,
-				23CB430627B54882000A5C79 /* Resource */,
-				23CB42D227B3E995000A5C79 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -254,6 +289,8 @@
 		23CB430D27B54E51000A5C79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2390F9DA27D4613F00319074 /* AVKit.framework */,
+				2390F9D827D4613500319074 /* AVKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,10 +303,46 @@
 			path = Algo;
 			sourceTree = "<group>";
 		};
+		E82982367B4C3FBB9A3830E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8298ADFDC924E4CC48B03FD /* VideoPlayerView.swift */,
+				2390F9E227D4685600319074 /* CardContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E829856BC9CEFD9EEED30D45 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				E8298B0F1FF6C37FBB5500FA /* TabVideosView */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E82989A6A06F5B0A99094BF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8298A2A514E7BAE0D6D66BC /* MediaInfos.swift */,
+				2390F9E627D46D4000319074 /* CardContainerViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8298B0F1FF6C37FBB5500FA /* TabVideosView */ = {
+			isa = PBXGroup;
+			children = (
+				E82989A6A06F5B0A99094BF5 /* Model */,
+				E82982367B4C3FBB9A3830E6 /* Views */,
+			);
+			path = TabVideosView;
+			sourceTree = "<group>";
+		};
 		E8298B7D196C508BFA104D74 /* Thinking */ = {
 			isa = PBXGroup;
 			children = (
 				E82980F54337B77036DC5E37 /* Algo */,
+				E829856BC9CEFD9EEED30D45 /* SwiftUI */,
 			);
 			path = Thinking;
 			sourceTree = "<group>";
@@ -364,7 +437,10 @@
 			files = (
 				230D2DAA27C0EAB200F5E1AF /* GithubMapping.json in Resources */,
 				230D2DA727C0E7CE00F5E1AF /* GuideLang.json in Resources */,
+				2390F9EA27D47ED900319074 /* mimi2.mp4 in Resources */,
+				2390F9EC27D47EE400319074 /* mimi3.mp4 in Resources */,
 				23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */,
+				2390F9E127D467B200319074 /* mimi1.mp4 in Resources */,
 				23CB430827B549E4000A5C79 /* update.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,23 +463,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				230D170127BE868700F5E1AF /* SharkOneConfig.swift in Sources */,
-				230D2DB527C129DE00F5E1AF /* GitHubAPIModel.swift in Sources */,
-				23CB42FB27B3F016000A5C79 /* SharkLangView.swift in Sources */,
-				23CB42F727B3EB79000A5C79 /* SlideBarLabel.swift in Sources */,
-				230D2DB127C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */,
-				230D2DBC27C138D000F5E1AF /* ViewComponet.swift in Sources */,
-				230D2DC727C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */,
-				23CB430427B3F552000A5C79 /* SharkSubjectView.swift in Sources */,
+				2390F9E327D4685600319074 /* CardContainerView.swift in Sources */,
 				23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */,
-				23CB431227B54F51000A5C79 /* FoundationTool.swift in Sources */,
-				23CB430127B3F539000A5C79 /* SharkFoundationView.swift in Sources */,
-				23CB42F327B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */,
-				230D2DC427C1B9E200F5E1AF /* SharkWebView.swift in Sources */,
-				230D2DB927C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
-				23CB42FE27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
-				230D2DAE27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+				2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */,
 				E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */,
+				E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */,
+				2390F9E727D46D4000319074 /* CardContainerViewModel.swift in Sources */,
+				E8298683A6F46C486F445C98 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +551,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -538,6 +606,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -552,20 +622,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFK43R6989;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.mimi15;
 				PRODUCT_NAME = SharkOne;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -581,20 +654,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JFK43R6989;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.DYOne.SharkOne;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wanliming.mimi15;
 				PRODUCT_NAME = SharkOne;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
