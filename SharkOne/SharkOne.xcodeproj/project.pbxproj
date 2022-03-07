@@ -27,6 +27,7 @@
 		2390F9E727D46D4000319074 /* CardContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9E627D46D4000319074 /* CardContainerViewModel.swift */; };
 		2390F9EA27D47ED900319074 /* mimi2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9E927D47ED900319074 /* mimi2.mp4 */; };
 		2390F9EC27D47EE400319074 /* mimi3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9EB27D47EE400319074 /* mimi3.mp4 */; };
+		23C1ED1227D6459300FEE547 /* LibraryContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1ED1127D6459300FEE547 /* LibraryContentProvider.swift */; };
 		23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		2390F9E627D46D4000319074 /* CardContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerViewModel.swift; sourceTree = "<group>"; };
 		2390F9E927D47ED900319074 /* mimi2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi2.mp4; sourceTree = "<group>"; };
 		2390F9EB27D47EE400319074 /* mimi3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi3.mp4; sourceTree = "<group>"; };
+		23C1ED1127D6459300FEE547 /* LibraryContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryContentProvider.swift; sourceTree = "<group>"; };
 		23CB42D027B3E994000A5C79 /* SharkOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneApp.swift; sourceTree = "<group>"; };
 		23CB42D227B3E995000A5C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CB42D727B3E995000A5C79 /* SharkOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		23C1ED1027D6457300FEE547 /* LibraryContentProvider */ = {
+			isa = PBXGroup;
+			children = (
+				23C1ED1127D6459300FEE547 /* LibraryContentProvider.swift */,
+			);
+			path = LibraryContentProvider;
+			sourceTree = "<group>";
+		};
 		23CB42CA27B3E994000A5C79 = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +325,7 @@
 		E829856BC9CEFD9EEED30D45 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				23C1ED1027D6457300FEE547 /* LibraryContentProvider */,
 				E8298B0F1FF6C37FBB5500FA /* TabVideosView */,
 			);
 			path = SwiftUI;
@@ -465,6 +476,7 @@
 			files = (
 				2390F9E327D4685600319074 /* CardContainerView.swift in Sources */,
 				23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */,
+				23C1ED1227D6459300FEE547 /* LibraryContentProvider.swift in Sources */,
 				2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */,
 				E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */,
 				E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */,

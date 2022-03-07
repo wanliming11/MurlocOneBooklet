@@ -74,5 +74,7 @@ struct PractiseTextView: View {
 
 
 
+let s = [1,2,3].reduce(0) { $1 == 1 ? $0+1:$0}
+s
 
 
