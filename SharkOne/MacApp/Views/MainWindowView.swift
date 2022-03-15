@@ -12,6 +12,7 @@ struct MainWindowView: View {
     var body: some View {
         /// 这里是让一些学习的思考点有执行的机会
         MMOAlgoBoundaryAndSlice.thinking()
+        let _ = currentContainer
 
         return NavigationView {
             ShareSlidebar()

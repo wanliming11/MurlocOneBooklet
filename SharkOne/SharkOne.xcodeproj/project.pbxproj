@@ -19,6 +19,8 @@
 		230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DBB27C138D000F5E1AF /* ViewComponet.swift */; };
 		230D2DC527C1B9E200F5E1AF /* SharkWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */; };
 		230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
+		231AF77927E014BE0056AE41 /* BoxResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */; };
+		231AF77A27E014BE0056AE41 /* BoxResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */; };
 		2390F9D927D4613500319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9D827D4613500319074 /* AVKit.framework */; platformFilter = maccatalyst; };
 		2390F9DB27D4613F00319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9DA27D4613F00319074 /* AVKit.framework */; };
 		2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9DE27D466D500319074 /* SharkiOSMainView.swift */; };
@@ -60,6 +62,7 @@
 		230D2DBB27C138D000F5E1AF /* ViewComponet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponet.swift; sourceTree = "<group>"; };
 		230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkWebView.swift; sourceTree = "<group>"; };
 		230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkLocalIssuesVM.swift; sourceTree = "<group>"; };
+		231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxResultBuilder.swift; sourceTree = "<group>"; };
 		2390F9D827D4613500319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		2390F9DA27D4613F00319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		2390F9DE27D466D500319074 /* SharkiOSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkiOSMainView.swift; sourceTree = "<group>"; };
@@ -184,6 +187,14 @@
 				230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		231AF77727E014740056AE41 /* Boxes */ = {
+			isa = PBXGroup;
+			children = (
+				231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */,
+			);
+			path = Boxes;
 			sourceTree = "<group>";
 		};
 		2390F9DC27D4668C00319074 /* MacApp */ = {
@@ -325,6 +336,7 @@
 		E829856BC9CEFD9EEED30D45 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				231AF77727E014740056AE41 /* Boxes */,
 				23C1ED1027D6457300FEE547 /* LibraryContentProvider */,
 				E8298B0F1FF6C37FBB5500FA /* TabVideosView */,
 			);
@@ -481,6 +493,7 @@
 				E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */,
 				E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */,
 				2390F9E727D46D4000319074 /* CardContainerViewModel.swift in Sources */,
+				231AF77927E014BE0056AE41 /* BoxResultBuilder.swift in Sources */,
 				E8298683A6F46C486F445C98 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +518,7 @@
 				230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
 				23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
 				230D2DAF27C1002F00F5E1AF /* SharkOneAPIRequest.swift in Sources */,
+				231AF77A27E014BE0056AE41 /* BoxResultBuilder.swift in Sources */,
 				E8298F8C0B856287225BEA5F /* AlgoBoundaryAndSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
