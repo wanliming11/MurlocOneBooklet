@@ -85,6 +85,7 @@
 		23CB430327B3F552000A5C79 /* SharkSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkSubjectView.swift; sourceTree = "<group>"; };
 		23CB430727B549E4000A5C79 /* update.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = update.md; sourceTree = "<group>"; };
 		23CB431127B54F51000A5C79 /* FoundationTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationTool.swift; sourceTree = "<group>"; };
+		23E76AD627E721F200AFE99D /* SwiftLang.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SwiftLang.playground; path = Playground/SwiftLang.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgoBoundaryAndSlice.swift; sourceTree = "<group>"; };
 		E8298A2A514E7BAE0D6D66BC /* MediaInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaInfos.swift; sourceTree = "<group>"; };
 		E8298ADFDC924E4CC48B03FD /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -240,6 +241,7 @@
 		23CB42CA27B3E994000A5C79 = {
 			isa = PBXGroup;
 			children = (
+				23E76AD627E721F200AFE99D /* SwiftLang.playground */,
 				2390F9E827D47EB700319074 /* Resources */,
 				23CB42D227B3E995000A5C79 /* Assets.xcassets */,
 				2390F9DD27D466B000319074 /* iOSApp */,
@@ -421,7 +423,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					23CB42D627B3E995000A5C79 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -712,6 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -738,6 +741,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
