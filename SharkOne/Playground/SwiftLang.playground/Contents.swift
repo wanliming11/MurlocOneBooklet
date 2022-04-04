@@ -80,6 +80,7 @@ class BoxV2 {
     
     
     /// 内容加载的唯一方法，注意这是一个递归调用，会不断便利子 box 进行循环
+    /// TODO: 这里会支持按优先级来进行加载，只在一个作用域内
     func resume() {
         func recursive(_ box: BoxV2) {
             switch box.content {
@@ -128,6 +129,61 @@ protocol BoxLoadLifecycle {
     /// 释放
     func recycle()
 }
+
+/// Box DI 容器，用来解决 DI 容器的注册与邦迪
+
+
+
+/// Box 之间的通信模式
+internal struct ServiceKey {
+    internal let serviceType: Any.Type
+//    internal let argumentsType: Any.Type
+
+    internal init(
+        serviceType: Any.Type
+//        argumentsType: Any.Type
+    ) {
+        self.serviceType = serviceType
+//        self.argumentsType = argumentsType
+    }
+}
+
+// MARK: Hashable
+
+extension ServiceKey: Hashable {
+    static func == (lhs: ServiceKey, rhs: ServiceKey) -> Bool {
+        return lhs.serviceType == rhs.serviceType
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        ObjectIdentifier(serviceType).hash(into: &hasher)
+//        ObjectIdentifier(argumentsType).hash(into: &hasher)
+    }
+}
+
+struct BoxCaller {
+    static let single = BoxCaller()
+    private var services: [ServiceKey: AnyObject] = [:]
+    
+    mutating func bind<Service>(_ object: AnyObject, _ protocolName: Service.Type) {
+        let key = ServiceKey(serviceType: protocolName)
+        if services[key] != nil {
+            services[key] = object
+        }
+    }
+    
+    /// 通过绑定的协议获取对象
+    func call<Service>(_ protocolName: Service.Type) -> BoxV2? {
+        let key = ServiceKey(serviceType: protocolName)
+        return services[key] as? BoxV2
+    }
+
+}
+
+
+/// 实际处理
+
+
 
 
 let _ = BoxV2(name:"PlayerRoom")  {
