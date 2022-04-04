@@ -45,6 +45,7 @@
 		23CB430C27B54ACC000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430B27B54ACC000A5C79 /* MarkdownUI */; };
 		23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 23CB430E27B54E51000A5C79 /* MarkdownUI */; };
 		23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB431127B54F51000A5C79 /* FoundationTool.swift */; };
+		23DD11CD27E77A3B00E5AC79 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 23DD11CC27E77A3B00E5AC79 /* Kingfisher */; };
 		E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298A2A514E7BAE0D6D66BC /* MediaInfos.swift */; };
 		E8298683A6F46C486F445C98 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298ADFDC924E4CC48B03FD /* VideoPlayerView.swift */; };
 		E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */; };
@@ -105,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DD11CD27E77A3B00E5AC79 /* Kingfisher in Frameworks */,
 				2390F9D927D4613500319074 /* AVKit.framework in Frameworks */,
 				23CB430F27B54E51000A5C79 /* MarkdownUI in Frameworks */,
 			);
@@ -410,6 +412,7 @@
 			name = "SharkOne (macOS)";
 			packageProductDependencies = (
 				23CB430E27B54E51000A5C79 /* MarkdownUI */,
+				23DD11CC27E77A3B00E5AC79 /* Kingfisher */,
 			);
 			productName = "SharkOne (macOS)";
 			productReference = 23CB42DD27B3E995000A5C79 /* SharkOne.app */;
@@ -444,6 +447,7 @@
 			mainGroup = 23CB42CA27B3E994000A5C79;
 			packageReferences = (
 				23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				23DD11CB27E77A3B00E5AC79 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 23CB42D827B3E995000A5C79 /* Products */;
 			projectDirPath = "";
@@ -803,6 +807,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		23DD11CB27E77A3B00E5AC79 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -815,6 +827,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 23CB430A27B54ACC000A5C79 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
 			productName = MarkdownUI;
+		};
+		23DD11CC27E77A3B00E5AC79 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23DD11CB27E77A3B00E5AC79 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

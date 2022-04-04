@@ -9,6 +9,7 @@ import Foundation
 import CoreMIDI
 import SwiftUI
 
+// MARK: V1 版本 Box 结构
 // MARK: 基础结构
 struct Box {
     var id = UUID()          //唯一标识
@@ -77,3 +78,76 @@ let currentContainer = BoxesContainer(name:"PlayerRoom")  {
 }
 
 
+
+/// MARK: V2 版本 Box 结构
+
+@resultBuilder
+struct BoxBuilderV2 {
+    static func buildBlock(_ components: BoxV2...) -> [BoxV2] {
+        return components
+    }
+    
+    // 可选的返回，对应 if 条件
+    static func buildOptional(_ component: BoxV2?) -> BoxV2 {
+        return component ?? BoxV2(name: "Empty")
+    }
+        
+}
+
+
+struct BoxV2 {
+    /// 1. 内部属性加载优先级
+    enum Opportunity {
+        case Default(Int)
+        case Low(Int)
+        case High(Int)
+    }
+    
+    /// 2. 加载
+    enum LoaderOpportunity {
+        case Default  /// 初始化就加载
+        case Lazy    /// 当有业务调用的时候加载
+    }
+    
+    
+    private var id = UUID()
+    private var name: String = ""
+    var content: BoxContent
+    
+    var opportunity: Opportunity
+    var loadOpportunity: LoaderOpportunity = .Default
+    
+    /// 普通初始化
+    init(name: String) {
+        self.name = name
+        self.opportunity = .Default(111)
+        self.content = .single
+    }
+    
+    /// resultBuilder 的初始化
+    init(name: String, @BoxBuilderV2 builder: ()-> [BoxV2]) {
+        self.name = name
+        self.content = .group(builder())
+        self.opportunity = .Default(111)
+    }
+    
+}
+
+/// 扩展 BoxV2 的内容，支持single 和 group
+extension BoxV2 {
+    indirect enum BoxContent {
+        case single
+        case group([BoxV2])
+    }
+}
+
+
+
+let boxes = BoxV2(name:"PlayerRoom")  {
+    BoxV2(name: "room")
+    BoxV2(name: "stream")
+    BoxV2(name: "activity") {
+        BoxV2(name: "activity1")
+        BoxV2(name: "activity2")
+    }
+}
