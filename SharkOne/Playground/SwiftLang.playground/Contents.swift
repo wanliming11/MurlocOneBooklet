@@ -42,7 +42,7 @@ struct BoxBuilderV2 {
 }
 
 
-class BoxV2 {
+class BoxV2: BoxLoadLifecycle {
     /// 1. 内部属性加载优先级
     enum Opportunity {
         case Default(Int)
@@ -58,7 +58,7 @@ class BoxV2 {
     
     
     private var id = UUID()
-    private var name: String = ""
+    var name: String = ""
     var content: BoxContent
     
     var opportunity: Opportunity
@@ -76,6 +76,19 @@ class BoxV2 {
         self.name = name
         self.content = .group(builder())
         self.opportunity = .Default(111)
+    }
+    
+    ///MARK: lifecycle
+    func load() {
+//        print("Load box \(self.name)")
+    }
+    
+    func focusRefresh() {
+//        print("FocusRefresh box \(self.name)")
+    }
+    
+    func recycle() {
+//        print("Recycle box \(self.name)")
     }
     
     
@@ -105,19 +118,19 @@ extension BoxV2 {
     }
 }
 
-extension BoxV2: BoxLoadLifecycle {
-    func load() {
-        print("Load box \(self.name)")
-    }
-    
-    func focusRefresh() {
-        print("FocusRefresh box \(self.name)")
-    }
-    
-    func recycle() {
-        print("Recycle box \(self.name)")
-    }
-}
+//extension BoxV2: BoxLoadLifecycle {
+//    func load() {
+//        print("Load box \(self.name)")
+//    }
+//
+//    func focusRefresh() {
+//        print("FocusRefresh box \(self.name)")
+//    }
+//
+//    func recycle() {
+//        print("Recycle box \(self.name)")
+//    }
+//}
 
 protocol BoxLoadLifecycle {
     /// 加载执行的内容
@@ -161,39 +174,91 @@ extension ServiceKey: Hashable {
     }
 }
 
-struct BoxCaller {
+class BoxCaller {
     static let single = BoxCaller()
     private var services: [ServiceKey: AnyObject] = [:]
     
-    mutating func bind<Service>(_ object: AnyObject, _ protocolName: Service.Type) {
+    func bind<Service>(_ object: AnyObject, _ protocolName: Service.Type) {
         let key = ServiceKey(serviceType: protocolName)
-        if services[key] != nil {
+        if services[key] == nil {
             services[key] = object
         }
+        print(services)
     }
     
     /// 通过绑定的协议获取对象
-    func call<Service>(_ protocolName: Service.Type) -> BoxV2? {
+    func call<Service>(_ protocolName: Service.Type) -> Service? {
         let key = ServiceKey(serviceType: protocolName)
-        return services[key] as? BoxV2
+        let v: Service = services[key] as! Service
+        return v
     }
 
 }
 
 
-/// 实际处理
+/// 测试
+class RoomBox: BoxV2, RoomInterface {
+    func roominfo() -> Dictionary<String, Any> {
+        return ["rid": 123456, "isMatch": true]
+    }
+    
+    override func load() {
+        print("RoomBox Load ")
+        BoxCaller.single.bind(self, RoomInterface.self)
+    }
+    
+    override func focusRefresh() {
+    }
+    
+    override func recycle() {
+        print("RoomBox Recycle")
+    }
+    
+}
+
+protocol RoomInterface {
+    func roominfo() -> Dictionary<String, Any>
+}
 
 
+class StreamBox: BoxV2, StreamInterface {
+    func hasP2P() -> Bool {
+        return true
+    }
 
+    override func load() {
+        print("StreamBox Load ")
+        BoxCaller.single.bind(self, StreamInterface.self)
+    }
+    
+    override func focusRefresh() {
+    }
+    
+    override func recycle() {
+        print("StreamBox Recycle")
+    }
+}
+
+protocol StreamInterface {
+    func hasP2P() -> Bool
+}
+
+
+let roomB = RoomBox(name: "room")
+let streamB = StreamBox(name: "stream")
 
 let _ = BoxV2(name:"PlayerRoom")  {
-    BoxV2(name: "room")
-    BoxV2(name: "stream")
+    roomB
+    streamB
     BoxV2(name: "activity") {
         BoxV2(name: "activity1")
         BoxV2(name: "activity2")
     }
 }.resume()
+
+let v = BoxCaller.single.call(RoomInterface.self)?.roominfo()
+let b = BoxCaller.single.call(StreamInterface.self)?.hasP2P()
+
 
 
 
