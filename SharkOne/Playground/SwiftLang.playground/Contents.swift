@@ -1,4 +1,5 @@
 import UIKit
+import Dispatch
 
 var greeting = "Hello, playground"
 
@@ -17,8 +18,8 @@ var original = OriginalStruct()
 var mirrorOriginal = Mirror(reflecting: original)
 for (k, v) in mirrorOriginal.children {
     if k == "values" {
-        let v = v as? Array<Int>
-        print(v)
+        let _ = v as? Array<Int>
+//        print(v)
     }
 }
 
@@ -80,15 +81,12 @@ class BoxV2: BoxLoadLifecycle {
     
     ///MARK: lifecycle
     func load() {
-//        print("Load box \(self.name)")
     }
     
     func focusRefresh() {
-//        print("FocusRefresh box \(self.name)")
     }
     
     func recycle() {
-//        print("Recycle box \(self.name)")
     }
     
     
@@ -118,20 +116,6 @@ extension BoxV2 {
     }
 }
 
-//extension BoxV2: BoxLoadLifecycle {
-//    func load() {
-//        print("Load box \(self.name)")
-//    }
-//
-//    func focusRefresh() {
-//        print("FocusRefresh box \(self.name)")
-//    }
-//
-//    func recycle() {
-//        print("Recycle box \(self.name)")
-//    }
-//}
-
 protocol BoxLoadLifecycle {
     /// 加载执行的内容
     func load()
@@ -150,14 +134,11 @@ protocol BoxLoadLifecycle {
 /// Box 之间的通信模式
 internal struct ServiceKey {
     internal let serviceType: Any.Type
-//    internal let argumentsType: Any.Type
 
     internal init(
         serviceType: Any.Type
-//        argumentsType: Any.Type
     ) {
         self.serviceType = serviceType
-//        self.argumentsType = argumentsType
     }
 }
 
@@ -170,48 +151,75 @@ extension ServiceKey: Hashable {
     
     public func hash(into hasher: inout Hasher) {
         ObjectIdentifier(serviceType).hash(into: &hasher)
-//        ObjectIdentifier(argumentsType).hash(into: &hasher)
     }
 }
 
 class BoxCaller {
     static let single = BoxCaller()
-    private var services: [ServiceKey: AnyObject] = [:]
+    private var _innerInterServices: [ServiceKey: AnyObject] = [:]
+    private var _innerNotifServices: [ServiceKey: [AnyObject]] = [:]
     
+    ///1. 接口协议的实现，先绑定后，其他需要使用的使用方会再处理
+    ///1.1 绑定接口协议
     func bind<Service>(_ object: AnyObject, _ protocolName: Service.Type) {
+        
         let key = ServiceKey(serviceType: protocolName)
-        if services[key] == nil {
-            services[key] = object
+        if _innerInterServices[key] == nil {
+            _innerInterServices[key] = object
         }
-        print(services)
     }
     
     /// 通过绑定的协议获取对象
+    /// 1.2 获得对象调用
     func call<Service>(_ protocolName: Service.Type) -> Service? {
         let key = ServiceKey(serviceType: protocolName)
-        let v: Service = services[key] as! Service
-        return v
+        return _innerInterServices[key] as? Service
     }
-
+    
+    /// 2.通知对应的绑定的业务去接收对应的通知内容
+    /// 2.1 通知发出，注意这个是同步的调用, 加入第一个参数是为了类型推到后面的调用
+    func notif<Service>(_ name: Service.Type, _ f:(Service) -> Void) {
+        let key = ServiceKey(serviceType: name)
+        if let notifClients = _innerNotifServices[key], notifClients.count > 0 {
+            print(notifClients)
+            notifClients.map {
+                f($0 as! Service)
+            }
+        }
+    }
+    
+    /// 2.2 注册对象
+    func reg<Service>(_ object: AnyObject, _ notifName: Service.Type) {
+        let key = ServiceKey(serviceType: notifName)
+        _innerNotifServices[key, default: []].append(object)
+        print(_innerNotifServices)
+    }
+    
 }
 
 
 /// 测试
-class RoomBox: BoxV2, RoomInterface {
+class RoomBox: BoxV2, RoomInterface, StreamNotif {
+    /// Interface
     func roominfo() -> Dictionary<String, Any> {
         return ["rid": 123456, "isMatch": true]
     }
     
+    /// Notif
+    func hasLoad() {
+        print("Received the stream notif")
+    }
+
     override func load() {
-        print("RoomBox Load ")
         BoxCaller.single.bind(self, RoomInterface.self)
+        BoxCaller.single.reg(self, StreamNotif.self)
     }
     
     override func focusRefresh() {
     }
     
     override func recycle() {
-        print("RoomBox Recycle")
+        
     }
     
 }
@@ -227,15 +235,18 @@ class StreamBox: BoxV2, StreamInterface {
     }
 
     override func load() {
-        print("StreamBox Load ")
         BoxCaller.single.bind(self, StreamInterface.self)
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+            BoxCaller.single.notif(StreamNotif.self) { $0.hasLoad() }
+        }
+        
     }
     
     override func focusRefresh() {
     }
     
     override func recycle() {
-        print("StreamBox Recycle")
     }
 }
 
@@ -243,6 +254,9 @@ protocol StreamInterface {
     func hasP2P() -> Bool
 }
 
+protocol StreamNotif {
+    func hasLoad()
+}
 
 let roomB = RoomBox(name: "room")
 let streamB = StreamBox(name: "stream")
