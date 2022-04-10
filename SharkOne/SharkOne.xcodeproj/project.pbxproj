@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230108FE28016CC400910FE7 /* AlgoMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230108FD28016CC400910FE7 /* AlgoMath.swift */; };
+		230108FF28016CC400910FE7 /* AlgoMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230108FD28016CC400910FE7 /* AlgoMath.swift */; };
 		230D170227BE868700F5E1AF /* SharkOneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D170027BE868700F5E1AF /* SharkOneConfig.swift */; };
 		230D2DA727C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
 		230D2DA827C0E7CE00F5E1AF /* GuideLang.json in Resources */ = {isa = PBXBuildFile; fileRef = 230D2DA627C0E7CE00F5E1AF /* GuideLang.json */; };
@@ -53,6 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230108FD28016CC400910FE7 /* AlgoMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoMath.swift; sourceTree = "<group>"; };
 		230D170027BE868700F5E1AF /* SharkOneConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneConfig.swift; sourceTree = "<group>"; };
 		230D2DA627C0E7CE00F5E1AF /* GuideLang.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GuideLang.json; sourceTree = "<group>"; };
 		230D2DA927C0EAB200F5E1AF /* GithubMapping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GithubMapping.json; sourceTree = "<group>"; };
@@ -324,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				E82988E2C01DDD50B0A769DC /* AlgoBoundaryAndSlice.swift */,
+				230108FD28016CC400910FE7 /* AlgoMath.swift */,
 			);
 			path = Algo;
 			sourceTree = "<group>";
@@ -498,6 +502,7 @@
 				2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */,
 				E8298F6F882CC518564DBA0B /* AlgoBoundaryAndSlice.swift in Sources */,
 				E82985A09E23F33ADEED2C30 /* MediaInfos.swift in Sources */,
+				230108FE28016CC400910FE7 /* AlgoMath.swift in Sources */,
 				2390F9E727D46D4000319074 /* CardContainerViewModel.swift in Sources */,
 				231AF77927E014BE0056AE41 /* BoxResultBuilder.swift in Sources */,
 				E8298683A6F46C486F445C98 /* VideoPlayerView.swift in Sources */,
@@ -516,6 +521,7 @@
 				230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */,
 				230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */,
 				23CB430527B3F552000A5C79 /* SharkSubjectView.swift in Sources */,
+				230108FF28016CC400910FE7 /* AlgoMath.swift in Sources */,
 				23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */,
 				23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */,
 				23CB430227B3F539000A5C79 /* SharkFoundationView.swift in Sources */,
