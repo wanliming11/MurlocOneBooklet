@@ -11,8 +11,11 @@ import MarkdownUI
 struct MainWindowView: View {
     var body: some View {
         /// 这里是让一些学习的思考点有执行的机会
+        /// 1. 算法思考
         MMOAlgoBoundaryAndSlice.thinking()
         AlgoMath.thinking()
+        /// 2. 框架思考
+        CombineNotif.thinking()
         
         let _ = currentContainer
 

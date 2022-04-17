@@ -32,6 +32,7 @@
 		2390F9EA27D47ED900319074 /* mimi2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9E927D47ED900319074 /* mimi2.mp4 */; };
 		2390F9EC27D47EE400319074 /* mimi3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2390F9EB27D47EE400319074 /* mimi3.mp4 */; };
 		23C1ED1227D6459300FEE547 /* LibraryContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1ED1127D6459300FEE547 /* LibraryContentProvider.swift */; };
+		23CA5CFE280C3A85000B2AE7 /* NetworkNotif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CA5CFC280C34C4000B2AE7 /* NetworkNotif.swift */; };
 		23CB42E027B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CB42D027B3E994000A5C79 /* SharkOneApp.swift */; };
 		23CB42E427B3E995000A5C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CB42D227B3E995000A5C79 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		2390F9E927D47ED900319074 /* mimi2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi2.mp4; sourceTree = "<group>"; };
 		2390F9EB27D47EE400319074 /* mimi3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mimi3.mp4; sourceTree = "<group>"; };
 		23C1ED1127D6459300FEE547 /* LibraryContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryContentProvider.swift; sourceTree = "<group>"; };
+		23CA5CFC280C34C4000B2AE7 /* NetworkNotif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkNotif.swift; sourceTree = "<group>"; };
 		23CB42D027B3E994000A5C79 /* SharkOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkOneApp.swift; sourceTree = "<group>"; };
 		23CB42D227B3E995000A5C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CB42D727B3E995000A5C79 /* SharkOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +245,14 @@
 			path = LibraryContentProvider;
 			sourceTree = "<group>";
 		};
+		23CA5CFB280C340F000B2AE7 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				23CA5CFC280C34C4000B2AE7 /* NetworkNotif.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		23CB42CA27B3E994000A5C79 = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +382,7 @@
 		E8298B7D196C508BFA104D74 /* Thinking */ = {
 			isa = PBXGroup;
 			children = (
+				23CA5CFB280C340F000B2AE7 /* Combine */,
 				E82980F54337B77036DC5E37 /* Algo */,
 				E829856BC9CEFD9EEED30D45 /* SwiftUI */,
 			);
@@ -520,6 +531,7 @@
 				230D2DB227C125FB00F5E1AF /* SharkOneIssuesVM.swift in Sources */,
 				230D2DBD27C138D000F5E1AF /* ViewComponet.swift in Sources */,
 				230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */,
+				23CA5CFE280C3A85000B2AE7 /* NetworkNotif.swift in Sources */,
 				23CB430527B3F552000A5C79 /* SharkSubjectView.swift in Sources */,
 				230108FF28016CC400910FE7 /* AlgoMath.swift in Sources */,
 				23CB42E127B3E995000A5C79 /* SharkOneApp.swift in Sources */,
