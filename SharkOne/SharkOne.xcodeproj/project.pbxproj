@@ -23,6 +23,7 @@
 		230D2DC827C1BEB300F5E1AF /* SharkLocalIssuesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */; };
 		231AF77927E014BE0056AE41 /* BoxResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */; };
 		231AF77A27E014BE0056AE41 /* BoxResultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */; };
+		232EFC972828074B00C34BB3 /* EmptyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232EFC962828074B00C34BB3 /* EmptyProtocol.swift */; };
 		2390F9D927D4613500319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9D827D4613500319074 /* AVKit.framework */; platformFilter = maccatalyst; };
 		2390F9DB27D4613F00319074 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390F9DA27D4613F00319074 /* AVKit.framework */; };
 		2390F9DF27D466D500319074 /* SharkiOSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390F9DE27D466D500319074 /* SharkiOSMainView.swift */; };
@@ -68,6 +69,7 @@
 		230D2DC327C1B9E200F5E1AF /* SharkWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkWebView.swift; sourceTree = "<group>"; };
 		230D2DC627C1BEB300F5E1AF /* SharkLocalIssuesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkLocalIssuesVM.swift; sourceTree = "<group>"; };
 		231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxResultBuilder.swift; sourceTree = "<group>"; };
+		232EFC962828074B00C34BB3 /* EmptyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyProtocol.swift; sourceTree = "<group>"; };
 		2390F9D827D4613500319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		2390F9DA27D4613F00319074 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/AVKit.framework; sourceTree = DEVELOPER_DIR; };
 		2390F9DE27D466D500319074 /* SharkiOSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkiOSMainView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 				231AF77827E014BE0056AE41 /* BoxResultBuilder.swift */,
 			);
 			path = Boxes;
+			sourceTree = "<group>";
+		};
+		232EFC952828064C00C34BB3 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				232EFC962828074B00C34BB3 /* EmptyProtocol.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		2390F9DC27D4668C00319074 /* MacApp */ = {
@@ -382,6 +392,7 @@
 		E8298B7D196C508BFA104D74 /* Thinking */ = {
 			isa = PBXGroup;
 			children = (
+				232EFC952828064C00C34BB3 /* Swift */,
 				23CA5CFB280C340F000B2AE7 /* Combine */,
 				E82980F54337B77036DC5E37 /* Algo */,
 				E829856BC9CEFD9EEED30D45 /* SwiftUI */,
@@ -538,6 +549,7 @@
 				23CB431327B54F51000A5C79 /* FoundationTool.swift in Sources */,
 				23CB430227B3F539000A5C79 /* SharkFoundationView.swift in Sources */,
 				23CB42F427B3EAE7000A5C79 /* ShareSlidebar.swift in Sources */,
+				232EFC972828074B00C34BB3 /* EmptyProtocol.swift in Sources */,
 				230D2DC527C1B9E200F5E1AF /* SharkWebView.swift in Sources */,
 				230D2DBA27C1341A00F5E1AF /* IssueDetailView.swift in Sources */,
 				23CB42FF27B3F2DB000A5C79 /* MainWindowView.swift in Sources */,
