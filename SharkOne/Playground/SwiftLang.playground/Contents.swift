@@ -280,4 +280,10 @@ let b = BoxCaller.single.call(StreamInterface.self)?.hasP2P()
 
 /// String .start .end
 
-
+let v1 = (key:1, value: 12)   /// key，value 只是作为元组的描述？
+let v2 = v1.0
+let v3 = v1.1
+//v.1
+let v4 = (1, 12)
+v4.0
+v4.1
